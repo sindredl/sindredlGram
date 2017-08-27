@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2761936F1F52E7B900A874F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761936E1F52E7B900A874F5 /* AppDelegate.swift */; };
-		276193711F52E7B900A874F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276193701F52E7B900A874F5 /* ViewController.swift */; };
+		276193711F52E7B900A874F5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276193701F52E7B900A874F5 /* SignInVC.swift */; };
 		276193741F52E7B900A874F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276193721F52E7B900A874F5 /* Main.storyboard */; };
 		276193761F52E7B900A874F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276193751F52E7B900A874F5 /* Assets.xcassets */; };
 		276193791F52E7BA00A874F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276193771F52E7BA00A874F5 /* LaunchScreen.storyboard */; };
+		276193811F52E85F00A874F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276193801F52E85F00A874F5 /* GoogleService-Info.plist */; };
+		393CDB3086C50B517E631208 /* Pods_SindredlGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C922EBA086A86BF89A33A95 /* Pods_SindredlGram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2761936B1F52E7B900A874F5 /* SindredlGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SindredlGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2761936E1F52E7B900A874F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		276193701F52E7B900A874F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		276193701F52E7B900A874F5 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		276193731F52E7B900A874F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		276193751F52E7B900A874F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		276193781F52E7BA00A874F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2761937A1F52E7BA00A874F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276193801F52E85F00A874F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5FA3F78F050145F11EC21EB2 /* Pods-SindredlGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SindredlGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-SindredlGram/Pods-SindredlGram.release.xcconfig"; sourceTree = "<group>"; };
+		6C922EBA086A86BF89A33A95 /* Pods_SindredlGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SindredlGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19D21D13D91B016B661B217 /* Pods-SindredlGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SindredlGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SindredlGram/Pods-SindredlGram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				393CDB3086C50B517E631208 /* Pods_SindredlGram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				2761936D1F52E7B900A874F5 /* SindredlGram */,
 				2761936C1F52E7B900A874F5 /* Products */,
+				2AD3974350EB769397E0D8DE /* Pods */,
+				2867B856D622F2BC8FAFD84F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,56 @@
 		2761936D1F52E7B900A874F5 /* SindredlGram */ = {
 			isa = PBXGroup;
 			children = (
+				27D844D51F52EA7200A166D3 /* Model */,
+				27D844D61F52EA7600A166D3 /* View */,
+				27D844D71F52EA7A00A166D3 /* Controller */,
 				2761936E1F52E7B900A874F5 /* AppDelegate.swift */,
-				276193701F52E7B900A874F5 /* ViewController.swift */,
 				276193721F52E7B900A874F5 /* Main.storyboard */,
 				276193751F52E7B900A874F5 /* Assets.xcassets */,
 				276193771F52E7BA00A874F5 /* LaunchScreen.storyboard */,
 				2761937A1F52E7BA00A874F5 /* Info.plist */,
+				276193801F52E85F00A874F5 /* GoogleService-Info.plist */,
 			);
 			path = SindredlGram;
+			sourceTree = "<group>";
+		};
+		27D844D51F52EA7200A166D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27D844D61F52EA7600A166D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27D844D71F52EA7A00A166D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				276193701F52E7B900A874F5 /* SignInVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2867B856D622F2BC8FAFD84F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C922EBA086A86BF89A33A95 /* Pods_SindredlGram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AD3974350EB769397E0D8DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F19D21D13D91B016B661B217 /* Pods-SindredlGram.debug.xcconfig */,
+				5FA3F78F050145F11EC21EB2 /* Pods-SindredlGram.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2761937D1F52E7BA00A874F5 /* Build configuration list for PBXNativeTarget "SindredlGram" */;
 			buildPhases = (
+				4801E0B641B92B376AC8CA9E /* [CP] Check Pods Manifest.lock */,
 				276193671F52E7B900A874F5 /* Sources */,
 				276193681F52E7B900A874F5 /* Frameworks */,
 				276193691F52E7B900A874F5 /* Resources */,
+				90DAD67AD26AF6857350D677 /* [CP] Embed Pods Frameworks */,
+				37DD55577FEFEDC0FF6511B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				276193791F52E7BA00A874F5 /* LaunchScreen.storyboard in Resources */,
+				276193811F52E85F00A874F5 /* GoogleService-Info.plist in Resources */,
 				276193761F52E7B900A874F5 /* Assets.xcassets in Resources */,
 				276193741F52E7B900A874F5 /* Main.storyboard in Resources */,
 			);
@@ -130,12 +185,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37DD55577FEFEDC0FF6511B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SindredlGram/Pods-SindredlGram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4801E0B641B92B376AC8CA9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90DAD67AD26AF6857350D677 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SindredlGram/Pods-SindredlGram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		276193671F52E7B900A874F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				276193711F52E7B900A874F5 /* ViewController.swift in Sources */,
+				276193711F52E7B900A874F5 /* SignInVC.swift in Sources */,
 				2761936F1F52E7B900A874F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +370,7 @@
 		};
 		2761937E1F52E7BA00A874F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F19D21D13D91B016B661B217 /* Pods-SindredlGram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8QWQUTMED2;
@@ -281,6 +385,7 @@
 		};
 		2761937F1F52E7BA00A874F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FA3F78F050145F11EC21EB2 /* Pods-SindredlGram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8QWQUTMED2;
@@ -312,6 +417,7 @@
 				2761937F1F52E7BA00A874F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
