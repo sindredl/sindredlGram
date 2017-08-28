@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270E36B11F53F10A003E863E /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E36B01F53F10A003E863E /* FancyView.swift */; };
+		270E36B41F53F1BE003E863E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E36B31F53F1BE003E863E /* Constants.swift */; };
+		270E36B61F53F410003E863E /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E36B51F53F410003E863E /* RoundBtn.swift */; };
+		270E36B81F53F5B8003E863E /* FacyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E36B71F53F5B8003E863E /* FacyField.swift */; };
+		270E36BA1F53FABB003E863E /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E36B91F53FABB003E863E /* FancyBtn.swift */; };
 		2761936F1F52E7B900A874F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761936E1F52E7B900A874F5 /* AppDelegate.swift */; };
 		276193711F52E7B900A874F5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276193701F52E7B900A874F5 /* SignInVC.swift */; };
 		276193741F52E7B900A874F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276193721F52E7B900A874F5 /* Main.storyboard */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		270E36B01F53F10A003E863E /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		270E36B31F53F1BE003E863E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		270E36B51F53F410003E863E /* RoundBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		270E36B71F53F5B8003E863E /* FacyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacyField.swift; sourceTree = "<group>"; };
+		270E36B91F53FABB003E863E /* FancyBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		2761936B1F52E7B900A874F5 /* SindredlGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SindredlGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2761936E1F52E7B900A874F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		276193701F52E7B900A874F5 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -42,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270E36B21F53F1AC003E863E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				270E36B31F53F1BE003E863E /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		276193621F52E7B900A874F5 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +81,7 @@
 		2761936D1F52E7B900A874F5 /* SindredlGram */ = {
 			isa = PBXGroup;
 			children = (
+				270E36B21F53F1AC003E863E /* Util */,
 				27D844D51F52EA7200A166D3 /* Model */,
 				27D844D61F52EA7600A166D3 /* View */,
 				27D844D71F52EA7A00A166D3 /* Controller */,
@@ -86,6 +105,10 @@
 		27D844D61F52EA7600A166D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				270E36B01F53F10A003E863E /* FancyView.swift */,
+				270E36B51F53F410003E863E /* RoundBtn.swift */,
+				270E36B71F53F5B8003E863E /* FacyField.swift */,
+				270E36B91F53FABB003E863E /* FancyBtn.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,7 +262,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				276193711F52E7B900A874F5 /* SignInVC.swift in Sources */,
+				270E36B81F53F5B8003E863E /* FacyField.swift in Sources */,
+				270E36B61F53F410003E863E /* RoundBtn.swift in Sources */,
 				2761936F1F52E7B900A874F5 /* AppDelegate.swift in Sources */,
+				270E36B11F53F10A003E863E /* FancyView.swift in Sources */,
+				270E36B41F53F1BE003E863E /* Constants.swift in Sources */,
+				270E36BA1F53FABB003E863E /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

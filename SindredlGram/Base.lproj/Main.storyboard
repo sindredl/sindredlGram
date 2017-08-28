@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="po3-Cj-0Hg" userLabel="header">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="po3-Cj-0Hg" userLabel="header" customClass="FancyView" customModule="SindredlGram" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sindredlGram" translatesAutoresizingMaskIntoConstraints="NO" id="GbL-PF-SCX">
@@ -68,7 +68,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtx-Lt-x2h">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtx-Lt-x2h" customClass="RoundBtn" customModule="SindredlGram" customModuleProvider="target">
                                 <rect key="frame" x="112.5" y="230" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.32156862745098036" green="0.44705882352941173" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -78,22 +78,22 @@
                                 <state key="normal" image="f"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mKs-dJ-gh8">
-                                <rect key="frame" x="46" y="420" width="283" height="126"/>
+                                <rect key="frame" x="46" y="420" width="283" height="114"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-post" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ja-gO-6Uc">
-                                        <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-post" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ja-gO-6Uc" customClass="FacyField" customModule="SindredlGram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="24"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.79615261130136983" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOQ-Lg-uSA">
-                                        <rect key="frame" x="0.0" y="45" width="283" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Passord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOQ-Lg-uSA" customClass="FacyField" customModule="SindredlGram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="39" width="283" height="24"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.79615261130000003" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wq-1w-Tfb">
-                                        <rect key="frame" x="0.0" y="90" width="283" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wq-1w-Tfb" customClass="FancyBtn" customModule="SindredlGram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="78" width="283" height="36"/>
                                         <color key="backgroundColor" red="1" green="0.43137254901960786" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <state key="normal" title="Logg inn">
