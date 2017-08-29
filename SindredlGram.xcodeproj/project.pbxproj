@@ -12,12 +12,12 @@
 		270E36B61F53F410003E863E /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E36B51F53F410003E863E /* RoundBtn.swift */; };
 		270E36B81F53F5B8003E863E /* FacyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E36B71F53F5B8003E863E /* FacyField.swift */; };
 		270E36BA1F53FABB003E863E /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E36B91F53FABB003E863E /* FancyBtn.swift */; };
+		2749B17C1F54445C0011DD2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2749B17B1F54445B0011DD2D /* GoogleService-Info.plist */; };
 		2761936F1F52E7B900A874F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761936E1F52E7B900A874F5 /* AppDelegate.swift */; };
 		276193711F52E7B900A874F5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276193701F52E7B900A874F5 /* SignInVC.swift */; };
 		276193741F52E7B900A874F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276193721F52E7B900A874F5 /* Main.storyboard */; };
 		276193761F52E7B900A874F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276193751F52E7B900A874F5 /* Assets.xcassets */; };
 		276193791F52E7BA00A874F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276193771F52E7BA00A874F5 /* LaunchScreen.storyboard */; };
-		276193811F52E85F00A874F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276193801F52E85F00A874F5 /* GoogleService-Info.plist */; };
 		393CDB3086C50B517E631208 /* Pods_SindredlGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C922EBA086A86BF89A33A95 /* Pods_SindredlGram.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +27,8 @@
 		270E36B51F53F410003E863E /* RoundBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		270E36B71F53F5B8003E863E /* FacyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacyField.swift; sourceTree = "<group>"; };
 		270E36B91F53FABB003E863E /* FancyBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		2749B17B1F54445B0011DD2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/PokeFinder/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2749B17D1F5448490011DD2D /* SindredlGram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SindredlGram.entitlements; sourceTree = "<group>"; };
 		2761936B1F52E7B900A874F5 /* SindredlGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SindredlGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2761936E1F52E7B900A874F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		276193701F52E7B900A874F5 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -34,7 +36,6 @@
 		276193751F52E7B900A874F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		276193781F52E7BA00A874F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2761937A1F52E7BA00A874F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		276193801F52E85F00A874F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5FA3F78F050145F11EC21EB2 /* Pods-SindredlGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SindredlGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-SindredlGram/Pods-SindredlGram.release.xcconfig"; sourceTree = "<group>"; };
 		6C922EBA086A86BF89A33A95 /* Pods_SindredlGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SindredlGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19D21D13D91B016B661B217 /* Pods-SindredlGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SindredlGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SindredlGram/Pods-SindredlGram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		2761936D1F52E7B900A874F5 /* SindredlGram */ = {
 			isa = PBXGroup;
 			children = (
+				2749B17D1F5448490011DD2D /* SindredlGram.entitlements */,
 				270E36B21F53F1AC003E863E /* Util */,
 				27D844D51F52EA7200A166D3 /* Model */,
 				27D844D61F52EA7600A166D3 /* View */,
@@ -89,8 +91,8 @@
 				276193721F52E7B900A874F5 /* Main.storyboard */,
 				276193751F52E7B900A874F5 /* Assets.xcassets */,
 				276193771F52E7BA00A874F5 /* LaunchScreen.storyboard */,
+				2749B17B1F54445B0011DD2D /* GoogleService-Info.plist */,
 				2761937A1F52E7BA00A874F5 /* Info.plist */,
-				276193801F52E85F00A874F5 /* GoogleService-Info.plist */,
 			);
 			path = SindredlGram;
 			sourceTree = "<group>";
@@ -173,6 +175,12 @@
 				TargetAttributes = {
 					2761936A1F52E7B900A874F5 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -200,7 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				276193791F52E7BA00A874F5 /* LaunchScreen.storyboard in Resources */,
-				276193811F52E85F00A874F5 /* GoogleService-Info.plist in Resources */,
+				2749B17C1F54445C0011DD2D /* GoogleService-Info.plist in Resources */,
 				276193761F52E7B900A874F5 /* Assets.xcassets in Resources */,
 				276193741F52E7B900A874F5 /* Main.storyboard in Resources */,
 			);
@@ -230,13 +238,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SindredlGram-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		90DAD67AD26AF6857350D677 /* [CP] Embed Pods Frameworks */ = {
@@ -245,9 +256,32 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SindredlGram/Pods-SindredlGram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -401,11 +435,14 @@
 			baseConfigurationReference = F19D21D13D91B016B661B217 /* Pods-SindredlGram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SindredlGram/SindredlGram.entitlements;
 				DEVELOPMENT_TEAM = 8QWQUTMED2;
 				INFOPLIST_FILE = SindredlGram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sindredl.SindredlGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -416,11 +453,14 @@
 			baseConfigurationReference = 5FA3F78F050145F11EC21EB2 /* Pods-SindredlGram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SindredlGram/SindredlGram.entitlements;
 				DEVELOPMENT_TEAM = 8QWQUTMED2;
 				INFOPLIST_FILE = SindredlGram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sindredl.SindredlGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

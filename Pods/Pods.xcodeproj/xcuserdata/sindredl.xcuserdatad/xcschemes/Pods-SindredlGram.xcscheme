@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "004F28D7008D100CAC5DD36D8524F3C5"
+               BlueprintIdentifier = "85CCAB40F2F64B59BCE66109E954927A"
                BuildableName = "Pods_SindredlGram.framework"
                BlueprintName = "Pods-SindredlGram"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "004F28D7008D100CAC5DD36D8524F3C5"
+            BlueprintIdentifier = "85CCAB40F2F64B59BCE66109E954927A"
             BuildableName = "Pods_SindredlGram.framework"
             BlueprintName = "Pods-SindredlGram"
             ReferencedContainer = "container:Pods.xcodeproj">

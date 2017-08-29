@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -76,6 +77,9 @@
                                     <constraint firstAttribute="width" constant="150" id="zDG-a3-alo"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="FacebookBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6eM-1M-pLi"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mKs-dJ-gh8">
                                 <rect key="frame" x="46" y="420" width="283" height="114"/>
@@ -90,7 +94,7 @@
                                         <rect key="frame" x="0.0" y="39" width="283" height="24"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.79615261130000003" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wq-1w-Tfb" customClass="FancyBtn" customModule="SindredlGram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="78" width="283" height="36"/>
@@ -99,6 +103,9 @@
                                         <state key="normal" title="Logg inn">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2yA-QT-uiU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -122,6 +129,10 @@
                             <constraint firstItem="27K-34-XgB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="srx-zm-yJZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="5Ja-gO-6Uc" id="rpn-B0-LYz"/>
+                        <outlet property="pwdField" destination="tOQ-Lg-uSA" id="1Yr-AN-UA6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
