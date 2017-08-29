@@ -6,7 +6,7 @@ target 'SindredlGram' do
   use_frameworks!
 
   # Pods for SindredlGram
-  pod 'FacebookCore', '~> 0.2'
+  #pod 'FacebookCore', '~> 0.2'
   pod 'FacebookLogin', '~> 0.2'
   pod 'FacebookShare', '~> 0.2'
   pod 'FBSDKCoreKit', '~> 4.22.1'
@@ -17,7 +17,9 @@ target 'SindredlGram' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-  # pod 'FBSDKLoginKit'
+  
+  pod 'SwiftKeychainWrapper'
+  pod 'FBSDKLoginKit'
   
 
 end

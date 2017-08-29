@@ -12,12 +12,14 @@
 		270E36B61F53F410003E863E /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E36B51F53F410003E863E /* RoundBtn.swift */; };
 		270E36B81F53F5B8003E863E /* FacyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E36B71F53F5B8003E863E /* FacyField.swift */; };
 		270E36BA1F53FABB003E863E /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E36B91F53FABB003E863E /* FancyBtn.swift */; };
+		2747D8171F55D4ED00CC6FB2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2747D8161F55D4ED00CC6FB2 /* CircleView.swift */; };
 		2749B17C1F54445C0011DD2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2749B17B1F54445B0011DD2D /* GoogleService-Info.plist */; };
 		2761936F1F52E7B900A874F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761936E1F52E7B900A874F5 /* AppDelegate.swift */; };
 		276193711F52E7B900A874F5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276193701F52E7B900A874F5 /* SignInVC.swift */; };
 		276193741F52E7B900A874F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276193721F52E7B900A874F5 /* Main.storyboard */; };
 		276193761F52E7B900A874F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276193751F52E7B900A874F5 /* Assets.xcassets */; };
 		276193791F52E7BA00A874F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276193771F52E7BA00A874F5 /* LaunchScreen.storyboard */; };
+		277D1EC31F55888800D36D23 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277D1EC21F55888800D36D23 /* FeedVC.swift */; };
 		393CDB3086C50B517E631208 /* Pods_SindredlGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C922EBA086A86BF89A33A95 /* Pods_SindredlGram.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,7 @@
 		270E36B51F53F410003E863E /* RoundBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		270E36B71F53F5B8003E863E /* FacyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacyField.swift; sourceTree = "<group>"; };
 		270E36B91F53FABB003E863E /* FancyBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		2747D8161F55D4ED00CC6FB2 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		2749B17B1F54445B0011DD2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/PokeFinder/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2749B17D1F5448490011DD2D /* SindredlGram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SindredlGram.entitlements; sourceTree = "<group>"; };
 		2761936B1F52E7B900A874F5 /* SindredlGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SindredlGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +39,7 @@
 		276193751F52E7B900A874F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		276193781F52E7BA00A874F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2761937A1F52E7BA00A874F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277D1EC21F55888800D36D23 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		5FA3F78F050145F11EC21EB2 /* Pods-SindredlGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SindredlGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-SindredlGram/Pods-SindredlGram.release.xcconfig"; sourceTree = "<group>"; };
 		6C922EBA086A86BF89A33A95 /* Pods_SindredlGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SindredlGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19D21D13D91B016B661B217 /* Pods-SindredlGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SindredlGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SindredlGram/Pods-SindredlGram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				270E36B51F53F410003E863E /* RoundBtn.swift */,
 				270E36B71F53F5B8003E863E /* FacyField.swift */,
 				270E36B91F53FABB003E863E /* FancyBtn.swift */,
+				2747D8161F55D4ED00CC6FB2 /* CircleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				276193701F52E7B900A874F5 /* SignInVC.swift */,
+				277D1EC21F55888800D36D23 /* FeedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -280,6 +287,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -295,10 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2747D8171F55D4ED00CC6FB2 /* CircleView.swift in Sources */,
 				276193711F52E7B900A874F5 /* SignInVC.swift in Sources */,
 				270E36B81F53F5B8003E863E /* FacyField.swift in Sources */,
 				270E36B61F53F410003E863E /* RoundBtn.swift in Sources */,
 				2761936F1F52E7B900A874F5 /* AppDelegate.swift in Sources */,
+				277D1EC31F55888800D36D23 /* FeedVC.swift in Sources */,
 				270E36B11F53F10A003E863E /* FancyView.swift in Sources */,
 				270E36B41F53F1BE003E863E /* Constants.swift in Sources */,
 				270E36BA1F53FABB003E863E /* FancyBtn.swift in Sources */,
@@ -443,7 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sindredl.SindredlGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -461,7 +471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sindredl.SindredlGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

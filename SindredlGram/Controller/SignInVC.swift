@@ -10,8 +10,9 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
+import SwiftKeychainWrapper
 
-class SignInVC: UIViewController {
+class SignInVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailField: FacyField!
     @IBOutlet weak var pwdField: FacyField!
@@ -19,31 +20,28 @@ class SignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Fjerne keyboard
+        self.emailField.delegate = self
+        self.pwdField.delegate = self
         
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            print("SINDRE: ID Funnet i keychain!")
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
     }
     
-//    @IBAction func facebookLoginBtnPress(_ sender: Any) {
-//        let loginManager = FBSDKLoginManager()
-//        loginManager.logIn([ .publicProfile ], viewController: self) { loginResult in
-//            switch loginResult {
-//            case .failed(let error):
-//                print(error)
-//            case .cancelled:
-//                print("User cancelled login.")
-//            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
-//                print("Logged in!")
-//                let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.authenticationToken)
-//                self.firebaseAuth(credential)
-//
-//            }
-//        }
-//    }
+    // Remove keyboard when pressing return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    
+    
     
     @IBAction func FacebookBtnPressed(_ sender: AnyObject) {
         
@@ -62,30 +60,19 @@ class SignInVC: UIViewController {
             }
         }
         
-        //        Jess sin kode:
-//
-//        let facebookLogin = FBSDKLoginManager()
-//
-//        facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
-//            if error != nil {
-//                print("JESS: Unable to authenticate with Facebook - \(error)")
-//            } else if result?.isCancelled == true {
-//                print("JESS: User cancelled Facebook authentication")
-//            } else {
-//                print("JESS: Successfully authenticated with Facebook")
-//                let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-//                self.firebaseAuth(credential)
-//            }
-//        }
         
     }
     
     func firebaseAuth(_ credential: AuthCredential) {
         Auth.auth().signIn(with: credential, completion: { (user, error) in
             if error != nil {
-                print("SINDRE: Kunne ikke autentisewre med Firebase - \(error)")
+                print("SINDRE: Kunne ikke autentisere med Firebase - \(String(describing: error))")
             } else {
                 print("SINDRE: Vellykket autentisert med Firebase!")
+                if let user = user {
+                    self.completeSignIn(id: user.uid)
+                }
+                
             }
         })
     }
@@ -97,12 +84,21 @@ class SignInVC: UIViewController {
                 if error == nil {
                     //Signed in
                     print("SINDRE: E-POST bruker autentisert med Firebase!")
+                    
+                    if let user = user {
+                        self.completeSignIn(id: user.uid)
+                    }
+                    
                 } else {
                     Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                         if error != nil {
                             print("SINDRE: E-POST bruker kunne ikke autentiseres med Firebase")
                         } else {
                             print("SINDRE: E-POST bruker Vellykket autentisert med Firebase!")
+                            if let user = user {
+                                self.completeSignIn(id: user.uid)
+                            }
+                            
                         }
                     })
                 }
@@ -110,7 +106,12 @@ class SignInVC: UIViewController {
         }
     }
     
-
+    func completeSignIn(id: String) {
+        let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("SINDRE: Credentials ble lagret i keychain \(keychainResult)")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
+    }
+    
 }
 
 
