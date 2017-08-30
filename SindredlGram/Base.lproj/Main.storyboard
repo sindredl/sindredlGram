@@ -204,6 +204,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="addImageTapped:" destination="bce-OG-F47" eventType="editingDidEnd" id="44Z-s2-bt2"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjT-dW-dyl" customClass="RoundBtn" customModule="SindredlGram" customModuleProvider="target">
                                                 <rect key="frame" x="278" y="0.0" width="49" height="49"/>
@@ -213,6 +216,9 @@
                                                     <constraint firstAttribute="width" constant="49" id="nEu-mV-qJK"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="add-post"/>
+                                                <connections>
+                                                    <action selector="postBtnTapped:" destination="bce-OG-F47" eventType="touchUpInside" id="Irg-gf-8au"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -347,6 +353,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionField" destination="hkc-9e-rzs" id="osG-3J-omj"/>
                         <outlet property="imageAdd" destination="lyJ-s5-wNN" id="6Ug-Cc-dEN"/>
                         <outlet property="tableView" destination="gXj-vg-WpT" id="3SR-KJ-U6m"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="Tdw-Yu-fmQ"/>
