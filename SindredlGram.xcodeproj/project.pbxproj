@@ -22,6 +22,7 @@
 		277D1EC31F55888800D36D23 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277D1EC21F55888800D36D23 /* FeedVC.swift */; };
 		27AAB7D11F55F10900442241 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AAB7D01F55F10900442241 /* PostCell.swift */; };
 		27AAB7D41F568FDE00442241 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AAB7D31F568FDE00442241 /* DataService.swift */; };
+		27AAB7D61F56ABB200442241 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AAB7D51F56ABB200442241 /* Post.swift */; };
 		393CDB3086C50B517E631208 /* Pods_SindredlGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C922EBA086A86BF89A33A95 /* Pods_SindredlGram.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		277D1EC21F55888800D36D23 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		27AAB7D01F55F10900442241 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		27AAB7D31F568FDE00442241 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = SindredlGram/DataService.swift; sourceTree = SOURCE_ROOT; };
+		27AAB7D51F56ABB200442241 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5FA3F78F050145F11EC21EB2 /* Pods-SindredlGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SindredlGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-SindredlGram/Pods-SindredlGram.release.xcconfig"; sourceTree = "<group>"; };
 		6C922EBA086A86BF89A33A95 /* Pods_SindredlGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SindredlGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19D21D13D91B016B661B217 /* Pods-SindredlGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SindredlGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SindredlGram/Pods-SindredlGram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		27D844D51F52EA7200A166D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				27AAB7D51F56ABB200442241 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				2747D8171F55D4ED00CC6FB2 /* CircleView.swift in Sources */,
 				276193711F52E7B900A874F5 /* SignInVC.swift in Sources */,
 				270E36B81F53F5B8003E863E /* FacyField.swift in Sources */,
+				27AAB7D61F56ABB200442241 /* Post.swift in Sources */,
 				270E36B61F53F410003E863E /* RoundBtn.swift in Sources */,
 				2761936F1F52E7B900A874F5 /* AppDelegate.swift in Sources */,
 				27AAB7D41F568FDE00442241 /* DataService.swift in Sources */,
