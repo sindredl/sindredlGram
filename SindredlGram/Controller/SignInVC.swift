@@ -70,7 +70,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
             } else {
                 print("SINDRE: Vellykket autentisert med Firebase!")
                 if let user = user {
-                    self.completeSignIn(id: user.uid)
+                    let userData = ["provider": credential.provider]
+                    self.completeSignIn(id: user.uid, userData: userData)
                 }
                 
             }
@@ -86,7 +87,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
                     print("SINDRE: E-POST bruker autentisert med Firebase!")
                     
                     if let user = user {
-                        self.completeSignIn(id: user.uid)
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
                     }
                     
                 } else {
@@ -96,7 +98,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
                         } else {
                             print("SINDRE: E-POST bruker Vellykket autentisert med Firebase!")
                             if let user = user {
-                                self.completeSignIn(id: user.uid)
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
                             }
                             
                         }
@@ -106,7 +109,10 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func completeSignIn(id: String) {
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+        
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("SINDRE: Credentials ble lagret i keychain \(keychainResult)")
         performSegue(withIdentifier: "goToFeed", sender: nil)
