@@ -115,17 +115,62 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             let metadata = StorageMetadata()
             metadata.contentType = "image/jpeg"
             
-            DataService.ds.REF_POST_IMAGES.child(imgUid).putData(imgData, metadata: metadata, completion: { (metadat, error) in
+            DataService.ds.REF_POST_IMAGES.child(imgUid).putData(imgData, metadata: metadata, completion: { (metadata, error) in
                 if error != nil {
                     print("SINDRE: Kunne ikke laste opp bilde til firebase storage!!")
                 } else {
                     print("SINDRE: Opplasting av bilde til firebase storage vellykket!")
-                    let downloadURL = metadata.downloadURL()?.absoluteString
+                    let downloadURL = metadata?.downloadURL()?.absoluteString
+                    
+                    
+                    if let url = downloadURL {
+                        print("SINDRE: Vi er rett før postToFirebase blir kalt")
+                        self.postToFirebase(imgUrl: url)
+                    }
+                    
                 }
             })
         }
     }
+  /*
+    func postToFirebase(imgUrl: String) {
+        print("SINDRE: Vi er helt i toppen av postToFirebase")
+        let post: Dictionary<String, Any> = [
+            "caption": captionField.text! as String,
+            "imageUrl": imgUrl as String,
+            "likes": 0 as Int
+        ]
+        print("SINDRE: Vi er rett over childByAutoId")
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        print("SINDRE: Vi er rett over setValue på firebasePost")
+        firebasePost.setValue(post)
+        print("SINDRE: firebasePost ble kjørt! =)")
+        
+        captionField.text = ""
+        imageSelected = false
+        imageAdd.image = UIImage(named: "add-image")
+    }
+     */
     
+    func postToFirebase(imgUrl: String) {
+        
+        let post: Dictionary<String, Any> = [
+            "caption": captionField.text as Any,
+            "imageUrl": imgUrl,
+            "likes": 0
+        ]
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        captionField.text = ""
+        imageSelected = false
+        imageAdd.image = UIImage(named: "add-image")
+        
+        tableView.reloadData()
+        
+    }
+ 
     
     @IBAction func signOutTapped(_ sender: Any) {
         
