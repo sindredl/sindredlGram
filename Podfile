@@ -7,10 +7,11 @@ target 'SindredlGram' do
 
   # Pods for SindredlGram
   #pod 'FacebookCore', '~> 0.2'
-  pod 'FacebookLogin', '~> 0.2'
-  pod 'FacebookShare', '~> 0.2'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
   pod 'FBSDKCoreKit', '~> 4.22.1'
-  pod 'FBSDKLoginKit', '~> 4.22.1'
+# pod 'FBSDKLoginKit', '~> 4.22.1'
   pod 'FBSDKShareKit', '~> 4.22.1'
   
   pod 'Firebase/Core'
@@ -20,6 +21,9 @@ target 'SindredlGram' do
   
   pod 'SwiftKeychainWrapper'
   pod 'FBSDKLoginKit'
+  
+  pod 'Gifu'
+  pod 'SCLAlertView'
   
 
 end

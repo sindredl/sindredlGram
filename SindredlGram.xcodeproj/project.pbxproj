@@ -14,6 +14,7 @@
 		270E36BA1F53FABB003E863E /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270E36B91F53FABB003E863E /* FancyBtn.swift */; };
 		2747D8171F55D4ED00CC6FB2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2747D8161F55D4ED00CC6FB2 /* CircleView.swift */; };
 		2749B17C1F54445C0011DD2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2749B17B1F54445B0011DD2D /* GoogleService-Info.plist */; };
+		274DA5131F5D846D002AB29B /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274DA5121F5D846D002AB29B /* SettingsVC.swift */; };
 		2761936F1F52E7B900A874F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761936E1F52E7B900A874F5 /* AppDelegate.swift */; };
 		276193711F52E7B900A874F5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276193701F52E7B900A874F5 /* SignInVC.swift */; };
 		276193741F52E7B900A874F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276193721F52E7B900A874F5 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		2747D8161F55D4ED00CC6FB2 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		2749B17B1F54445B0011DD2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/PokeFinder/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2749B17D1F5448490011DD2D /* SindredlGram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SindredlGram.entitlements; sourceTree = "<group>"; };
+		274DA5121F5D846D002AB29B /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		2761936B1F52E7B900A874F5 /* SindredlGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SindredlGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2761936E1F52E7B900A874F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		276193701F52E7B900A874F5 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				276193701F52E7B900A874F5 /* SignInVC.swift */,
 				277D1EC21F55888800D36D23 /* FeedVC.swift */,
+				274DA5121F5D846D002AB29B /* SettingsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -288,7 +291,9 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/Gifu/Gifu.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -303,7 +308,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gifu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -320,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274DA5131F5D846D002AB29B /* SettingsVC.swift in Sources */,
 				2747D8171F55D4ED00CC6FB2 /* CircleView.swift in Sources */,
 				276193711F52E7B900A874F5 /* SignInVC.swift in Sources */,
 				270E36B81F53F5B8003E863E /* FacyField.swift in Sources */,

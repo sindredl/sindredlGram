@@ -70,11 +70,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtx-Lt-x2h" customClass="RoundBtn" customModule="SindredlGram" customModuleProvider="target">
-                                <rect key="frame" x="112.5" y="230" width="150" height="150"/>
+                                <rect key="frame" x="137.5" y="230" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.32156862745098036" green="0.44705882352941173" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="hrz-7S-eHn"/>
-                                    <constraint firstAttribute="width" constant="150" id="zDG-a3-alo"/>
+                                    <constraint firstAttribute="height" constant="100" id="hrz-7S-eHn"/>
+                                    <constraint firstAttribute="width" constant="100" id="zDG-a3-alo"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
                                 <connections>
@@ -82,7 +82,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mKs-dJ-gh8">
-                                <rect key="frame" x="46" y="420" width="283" height="114"/>
+                                <rect key="frame" x="46" y="370" width="283" height="165"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-post" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ja-gO-6Uc" customClass="FacyField" customModule="SindredlGram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="24"/>
@@ -105,6 +105,17 @@
                                         </state>
                                         <connections>
                                             <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2yA-QT-uiU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2G6-Sj-UHN" customClass="FancyBtn" customModule="SindredlGram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="129" width="283" height="36"/>
+                                        <color key="backgroundColor" red="0.31764705879999999" green="0.64313725489999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Glemt passord?">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="forgottenPwdTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BGQ-lw-Sl2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -132,6 +143,7 @@
                     <connections>
                         <outlet property="emailField" destination="5Ja-gO-6Uc" id="rpn-B0-LYz"/>
                         <outlet property="pwdField" destination="tOQ-Lg-uSA" id="1Yr-AN-UA6"/>
+                        <outlet property="signInBtn" destination="1Wq-1w-Tfb" id="GTh-ts-wPm"/>
                         <segue destination="bce-OG-F47" kind="show" identifier="goToFeed" id="ylO-Z7-wxc"/>
                     </connections>
                 </viewController>
@@ -154,6 +166,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYG-yw-WGb" customClass="FancyView" customModule="SindredlGram" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cog_white" translatesAutoresizingMaskIntoConstraints="NO" id="f9j-ju-0ZK">
+                                        <rect key="frame" x="337" y="24" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="RWc-hc-c8e" appends="YES" id="eOR-xT-e1U"/>
+                                        </connections>
+                                    </imageView>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="R7k-H6-d4e">
                                         <rect key="frame" x="16" y="20" width="45" height="38"/>
                                         <constraints>
@@ -161,8 +181,9 @@
                                             <constraint firstAttribute="height" constant="38" id="f8B-dq-51F"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAU-yW-tb8">
-                                        <rect key="frame" x="157.5" y="21" width="59.5" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAU-yW-tb8">
+                                        <rect key="frame" x="158" y="21" width="59.5" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -174,12 +195,12 @@
                                     <constraint firstItem="R7k-H6-d4e" firstAttribute="top" secondItem="nYG-yw-WGb" secondAttribute="top" constant="20" id="351-IQ-LWY"/>
                                     <constraint firstAttribute="height" constant="65" id="AUK-rT-UCO"/>
                                     <constraint firstItem="R7k-H6-d4e" firstAttribute="leading" secondItem="nYG-yw-WGb" secondAttribute="leading" constant="16" id="TSH-AL-9RB"/>
-                                    <constraint firstItem="zAU-yW-tb8" firstAttribute="centerX" secondItem="nYG-yw-WGb" secondAttribute="centerX" id="tKz-Dh-osX"/>
-                                    <constraint firstItem="zAU-yW-tb8" firstAttribute="centerY" secondItem="R7k-H6-d4e" secondAttribute="centerY" id="x1w-UF-wW5"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="bW3-02-n44" appends="YES" id="Or7-ac-xlm"/>
-                                </connections>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="R7k-H6-d4e"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnL-N1-z5Z" customClass="FancyView" customModule="SindredlGram" customModuleProvider="target">
                                 <rect key="frame" x="16" y="81" width="343" height="65"/>
@@ -201,6 +222,7 @@
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Legg til en bildetekst" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hkc-9e-rzs" customClass="FacyField" customModule="SindredlGram" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="0.0" width="209" height="49"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -260,7 +282,7 @@
                                                                                 <constraint firstAttribute="height" constant="60" id="Ihh-qP-C01"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iLoveBritan89" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs1-Tp-ae1">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs1-Tp-ae1">
                                                                             <rect key="frame" x="60" y="0.0" width="207" height="60"/>
                                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                                                             <color key="textColor" red="1" green="0.43137254899999999" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -275,10 +297,10 @@
                                                                         </imageView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="sbG-LH-VJ2">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sbG-LH-VJ2">
                                                                     <rect key="frame" x="0.0" y="68" width="327" height="156.5"/>
                                                                 </imageView>
-                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E0D-rS-fob">
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E0D-rS-fob">
                                                                     <rect key="frame" x="0.0" y="232.5" width="327" height="50"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
@@ -318,6 +340,32 @@
                                                         <constraint firstAttribute="bottom" secondItem="Xei-9o-1BV" secondAttribute="bottom" constant="8" id="ngK-lT-5sH"/>
                                                     </constraints>
                                                 </view>
+                                                <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HoD-LT-M5s">
+                                                    <rect key="frame" x="0.0" y="8" width="375" height="329"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="9JK-zb-uex">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="329"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j1o-Yw-Kjd">
+                                                                <rect key="frame" x="0.0" y="79" width="375" height="612"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="SDt-vb-K1W">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="612"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                </view>
+                                                                <vibrancyEffect>
+                                                                    <blurEffect style="light"/>
+                                                                </vibrancyEffect>
+                                                            </visualEffectView>
+                                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nc8-OL-C4x">
+                                                                <rect key="frame" x="177" y="154" width="20" height="20"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </activityIndicatorView>
+                                                        </subviews>
+                                                    </view>
+                                                    <blurEffect style="light"/>
+                                                </visualEffectView>
                                             </subviews>
                                             <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
@@ -328,7 +376,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="blurView" destination="HoD-LT-M5s" id="PtE-BH-t1Y"/>
                                             <outlet property="caption" destination="E0D-rS-fob" id="7Lc-LZ-Qka"/>
+                                            <outlet property="likeImg" destination="6mB-Ad-qqO" id="trW-b2-LO7"/>
                                             <outlet property="likesLbl" destination="aRR-kp-gOe" id="g7g-yG-OAH"/>
                                             <outlet property="postImg" destination="sbG-LH-VJ2" id="Fxj-ZT-JMH"/>
                                             <outlet property="profileImg" destination="tVl-Ab-6IF" id="YDh-Ua-EEg"/>
@@ -357,31 +407,140 @@
                         <outlet property="imageAdd" destination="lyJ-s5-wNN" id="6Ug-Cc-dEN"/>
                         <outlet property="tableView" destination="gXj-vg-WpT" id="3SR-KJ-U6m"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="Tdw-Yu-fmQ"/>
+                        <segue destination="U3e-3o-DHy" kind="show" identifier="goToSettings" id="Fk3-GK-5wf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zR-p7-0oD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="bW3-02-n44">
-                    <connections>
-                        <action selector="signOutTapped:" destination="bce-OG-F47" id="pbH-Au-880"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <tapGestureRecognizer id="wXn-BW-YH1">
                     <connections>
                         <action selector="addImageTapped:" destination="bce-OG-F47" id="Xts-rB-ozu"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="RWc-hc-c8e">
+                    <connections>
+                        <action selector="settingsTapped:" destination="bce-OG-F47" id="fhA-d4-zGv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="894" y="123"/>
+            <point key="canvasLocation" x="949.60000000000002" y="122.78860569715144"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="OY2-Bd-HoT">
+            <objects>
+                <tableViewController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overFullScreen" id="U3e-3o-DHy" customClass="SettingsVC" customModule="SindredlGram" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ePg-kA-whL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="OYC-Ci-stX" customClass="FancyView" customModule="SindredlGram" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Innstillinger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbk-Gf-Esc">
+                                    <rect key="frame" x="110" y="21" width="154" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bC-5W-zH1">
+                                    <rect key="frame" x="8" y="24" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="back1600"/>
+                                    <connections>
+                                        <action selector="backBtnPressed:" destination="U3e-3o-DHy" eventType="touchUpInside" id="uX3-3U-eZJ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="xRv-fr-rvy"/>
+                            </constraints>
+                        </view>
+                        <sections>
+                            <tableViewSection headerTitle="Generelt" id="xNA-2m-Tf8">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UM8-39-3dN">
+                                        <rect key="frame" x="0.0" y="120.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UM8-39-3dN" id="kOd-bv-wyt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Min profil" id="oQO-dc-Kby">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oqc-R5-y5x">
+                                        <rect key="frame" x="0.0" y="220.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oqc-R5-y5x" id="NeE-2S-h88">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Endre brukernavn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePG-6n-vYj">
+                                                    <rect key="frame" x="8" y="11" width="135" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="App innstillinger" id="MK4-gD-DHk">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PlQ-xq-z7r">
+                                        <rect key="frame" x="0.0" y="320.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PlQ-xq-z7r" id="2GB-Ce-5AB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logg ut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nh0-AM-UOj">
+                                                    <rect key="frame" x="8" y="11" width="66" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="U3e-3o-DHy" id="sdC-0M-Jc9"/>
+                            <outlet property="delegate" destination="U3e-3o-DHy" id="FNI-dD-mkv"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignInFromSettings" id="p5B-u4-H8g"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1TE-qV-SVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744.8" y="122.78860569715144"/>
         </scene>
     </scenes>
     <resources>
         <image name="add-image" width="88" height="88"/>
         <image name="add-post" width="88" height="88"/>
+        <image name="back1600" width="1600" height="1600"/>
+        <image name="cog_white" width="2550" height="2550"/>
         <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
-        <image name="placeholder" width="567" height="312"/>
         <image name="profile" width="113" height="155"/>
         <image name="sign-out" width="92" height="65"/>
         <image name="sindredlGram" width="200" height="52"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="p5B-u4-H8g"/>
+    </inferredMetricsTieBreakers>
 </document>
